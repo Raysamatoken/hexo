@@ -4,11 +4,24 @@
   
     
     <entry>
+      <title>安卓11禁用fuse</title>
+      <link href="/2022/01/15/an-zhuo-11-jin-yong-fuse/"/>
+      <url>/2022/01/15/an-zhuo-11-jin-yong-fuse/</url>
+      
+        <content type="html"><![CDATA[<p>安卓11禁用Fuse，大幅提高IO性能<br>谷歌处于某种原因考虑，在安卓11中禁用了sdcardfs.<br>有测试指出fuse比sdcardfs慢了30多倍，显而易见的，氢11中，相册的加载速度变得异常缓慢.<br>经过对AOSP 中StorgeMangerService的分析，可利用一下prop属性简单的禁用fuse.</p><pre class="line-numbers language-none"><code class="language-none">persist.sys.fuse=falsepersist.fuse_sdcard=falsepersist.sys.fuse.default_fuse_enabled=falsepersist.sys.fflag.override.settings_fuse=falsepersist.device_config.storage_native_boot.fuse_enabled=falsero.sys.sdcardfs=true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>禁用后，mount属性如下</p><p><img src="https://raw.githubusercontent.com/Raysamatoken/hexofile/main/img/49522268010914692e38969756e2023b.jpg"></p><p>可能在部分魔改UI不起作用，MIUI测试不通过</p><p>也可以刷模块：</p><p><a href="https://raw.githubusercontent.com/Raysamatoken/hexofile/main/file/%E5%90%AF%E7%94%A8sdcardfs_b5.zip">https://raw.githubusercontent.com/Raysamatoken/hexofile/main/file/%E5%90%AF%E7%94%A8sdcardfs_b5.zip</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hello</title>
       <link href="/2022/01/14/hello/"/>
       <url>/2022/01/14/hello/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">---title: typora-vue-theme主题介绍date: 2018-09-07 09:25:00author: 赵奇img: /source/images/xxx.jpgtop: truehide: falsecover: truecoverImg: /images/1.jpgpassword: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92toc: falsemathjax: falsesummary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要categories: Markdowntags:  - Typora  - Markdown---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       
