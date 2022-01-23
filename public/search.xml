@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>青龙面板快手极速版</title>
+      <link href="/2022/01/16/qing-long-mian-ban-kuai-shou-ji-su-ban/"/>
+      <url>/2022/01/16/qing-long-mian-ban-kuai-shou-ji-su-ban/</url>
+      
+        <content type="html"><![CDATA[<p>定时设置CRON：45 6-23/2 * * *<br>拉取脚本：<br><code>ql raw https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js</code><br><img src="https://raw.githubusercontent.com/Raysamatoken/hexofile/main/img/e463b36b479a-2.jpg"></p><p>###抓取快手极速版变量<br>这里采用的安卓-小黄鸟(HttpCanary),获取以下变量即可运行<br>抓包软件抓取目标网址：<br><code>https://nebula.kuaishou.com/rest/n/nebula/activity/earn/overview/basicInfo</code><br>复制全部CK内容即可！<br><img src="https://raw.githubusercontent.com/Raysamatoken/hexofile/main/img/20220116094907.png"><br>###青龙面板环境变量填写</p><pre class="line-numbers language-none"><code class="language-none">#快手极速版export kshd="kpn=NEBULA; kpf=ANDROIxxxxx复制的那一段CK，很长"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="https://raw.githubusercontent.com/Raysamatoken/hexofile/main/img/20220116095121.png"><br>###编辑定时运行<br><img src="https://raw.githubusercontent.com/Raysamatoken/hexofile/main/img/20220116095140.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>安卓11禁用fuse</title>
       <link href="/2022/01/15/an-zhuo-11-jin-yong-fuse/"/>
       <url>/2022/01/15/an-zhuo-11-jin-yong-fuse/</url>
