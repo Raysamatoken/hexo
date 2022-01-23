@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>安卓所有数据走代理软件接口</title>
+      <link href="/2022/01/19/an-zhuo-suo-you-shu-ju-zou-dai-li-ruan-jian-jie-kou/"/>
+      <url>/2022/01/19/an-zhuo-suo-you-shu-ju-zou-dai-li-ruan-jian-jie-kou/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">ip rule add from all fwmark 0x0/0x20000 uidrange 0-99999 lookup tun0 pref 11600ip route add 0.0.0.0/0 dev tun0 table tun0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>node.js npm使用国内镜像源</title>
+      <link href="/2022/01/19/node.js-npm-shi-yong-guo-nei-jing-xiang-yuan/"/>
+      <url>/2022/01/19/node.js-npm-shi-yong-guo-nei-jing-xiang-yuan/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-使用-npm"><a href="#1-使用-npm" class="headerlink" title="(1) 使用 npm"></a>(1) 使用 npm</h3><pre class="line-numbers language-none"><code class="language-none">npm config set registry https://registry.npm.taobao.org --globalnpm config set disturl https://npm.taobao.org/dist --globalnpm i<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="2-使用-yarn"><a href="#2-使用-yarn" class="headerlink" title="(2) 使用 yarn"></a>(2) 使用 yarn</h3><pre class="line-numbers language-none"><code class="language-none">npm config set registry https://registry.npm.taobao.org --globalnpm config set disturl https://npm.taobao.org/dist --globalnpm i -g yarnyarn<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>青龙面板快手极速版</title>
       <link href="/2022/01/16/qing-long-mian-ban-kuai-shou-ji-su-ban/"/>
       <url>/2022/01/16/qing-long-mian-ban-kuai-shou-ji-su-ban/</url>
